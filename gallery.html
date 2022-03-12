@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="./static/css/style.css">
+    <link rel='stylesheet' href="./static/css/gallery.css">
+    <script defer src='./static/js/app.js'></script>
+    <title>audiotech</title>
+</head>
+
+<body style='background-color: white;'>
+    <main class='gallery-main'>
+      <header>
+        <div class="logo">
+            <a href='#'>
+                <!-- <img src="./static/img/img-logo/audio-prod.png" alt=""> -->
+                <img src="./static/img/img-logo/audio-logo.png" alt="">
+            </a>
+            <!-- <span>Audiotech</span> -->
+        </div>
+    
+        <nav>
+            <ul class='nav-link'>
+                <li><a href="./index.html">Home</a></li>
+                <!-- <li><a href=".events.html">Events</a></li> -->
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+        <div class="nav-icons">
+            <span class='icons'>
+                <img class='open' src='./static/img/img-gen/icon-menu.svg' draggable="false" alt='Open icon' >
+                <img class='close' src='./static/img/img-gen/icon-close.svg' draggable="false" alt='Open icon' > 
+            </span>
+        </div>
+    </header>
+
+
+        <section class="hero" style="background: url('./static/img/img-gen/live-stage.jpg'); background-repeat: no-repeat;background-size: 100% 100%;">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="typing-txt">
+                            <h1>Welcome to Audiotech gallery</h1>
+                            <p>Your one stop place for stage and musical instrument rentals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-img">
+                        <img class="mySlid w3-animate-fading" src="./static/img/img-gen/music-speaker-removebg-preview.png" alt='Music Speaker' >
+                    </div>
+                </div>
+            </section>
+        
+    <div class="gallery-container">
+      <div class="in-container">
+        <h1>Audiotech production Events Gallery</h1>
+        <div class="gall">
+         
+            <div class="slide-container">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                  <img src='./static/img/img-gallery/IMG-20220226-WA0034.jpg' alt='gallery image'  draggable="false">
+                  <!-- <img src="img_woods_wide.jpg" style="width:100%"> -->
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                  <img src='./static/img/img-gallery/IMG-20220226-WA0033.jpg' alt='gallery image'  draggable="false">
+
+                  <!-- <img src="img_5terre_wide.jpg" style="width:100%"> -->
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                  <img src='./static/img/img-gen/esther-igbekele.jpg' alt='gallery image'  draggable="false">
+
+                  <!-- <img src="img_mountains_wide.jpg" style="width:100%"> -->
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                  <img src='./static/img/img-gen/instagram_image-two.jpg' alt='gallery image'  draggable="false">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    
+                    <img src='./static/img/img-gallery/IMG-20220226-WA0026.jpg' alt='gallery image'  draggable="false">
+                    <!-- <img src="img_nature_wide.jpg" style="width:100%"> -->
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./static/img/img-gen/instagram_image-three.jpg" >
+                  <!-- <img src="img_snow_wide.jpg" style="width:100%"> -->
+                </div>
+                  
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="./static/img/img-gallery/IMG-20220226-WA0034.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./static/img/img-gallery/IMG-20220226-WA0033.jpg" stxyle="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./static/img/img-gen/esther-igbekele.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./static/img/img-gen/instagram_image-two.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./static/img/img-gallery/IMG-20220226-WA0026.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                  </div>    
+                  <div class="column">
+                    <img class="demo cursor" src="./static/img/img-gen/instagram_image-three.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                  </div>
+                </div>
+              </div>
+
+              <div class="gal-imgs">
+                <div class="img-hd">
+                  <h3>Lets light up your sound</h3>
+                  <p>We provide our service to the maximum when we setup your events</p>
+                  <p>We set stage for Concerts, crusades, revivals, live shows, church, wedding and on...</p>
+                </div>
+
+                <div class="gal-img-row">
+                  <img src="./static/img/img-gallery/IMG-20220226-WA0022.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gallery/IMG-20220226-WA0033.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gallery/IMG-20220226-WA0036.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gallery/IMG-20220226-WA0042.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gen/instagram_image-five.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gen/instagram_image-one.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gen/instagram_image-four.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gen/instagram_image-seven.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gallery/IMG-20220226-WA0040.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gallery/IMG-20220226-WA0044.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gallery/IMG-20220226-WA0048.jpg" alt="Gallery image">
+                  <img src="./static/img/img-gallery/IMG-20220226-WA0045.jpg" alt="Gallery image">
+                </div>
+              </div>
+
+
+              <div class="gl-lk">
+                <a class='gal-img-lnk' href="https://instagram.com/audiotech_production?utm_medium=copy_link">See more</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+        </div>
+        <footer>
+          <div class="footer-container">
+              <div class="footer-logo">
+                  <img src='./static/img/img-logo/audio-logo.png' alt='Audiotech logo' draggable="false">
+              </div>
+
+              <div class="futr-links">
+                  <h5>Links</h5>
+                  <ul class="footer-links">
+                      <li><a href='#'>Home</a></li>
+                      <li><a href='#'>About</a></li>
+                      <li><a href='#'>Visit us</a></li>
+                      <li><a href='#'>Contact us</a></li>
+                  </ul>
+          </div>
+
+          <div class="futr-srvc-lst">
+              <h5>Services</h5>
+              <ul class="footer-service">
+                  <li>Stage lightning</li>
+                  <li>Church stage</li>    
+                  <li>Wedding stage</li>    
+                  <li>Live show</li>    
+                  <li>Musical Concert</li>    
+                  <li>All rentals...</li>    
+              </ul>
+          </div>
+              
+          <div class="footer-icons">
+              <span class="icon-links">
+                  <a href="https://wa.me/+2348134154942" target="_blank">
+                      <img class='iclnks' src='./static/img/img-logo/icons8-whatsapp-30.png' alt='Whatsapp icon' aria-hidden="false" draggable="false">
+                  </a>
+
+                  <a href='https://web.facebook.com/hrm.kennysluv' target="_blank">
+                      <img class='iclnks' src="./static/img/img-logo/icons8-facebook-48.png" alt="facebook icon" aria-hidden="false" draggable="false">
+                  </a>
+
+                  <a href='https://instagram.com/audiotech_production?utm_medium=copy_link' target="_blank">
+                      <img class='iclnks' src='./static/img/img-logo/icons8-instagram-96.png' alt='instagram icon' draggable='false' aria-hidden="false">
+                  </a>
+
+                  <a href="mailto:audiotechproduction1@gmail.com" target="_blank">
+                      <img class='iclnks' src='./static/img/img-logo/icons8-gmail-48.png' aria-hidden="false" draggable="false" alt='Gmail icon'>
+                  </a>
+              </span>
+          </div>
+      </div>
+      <div class="footer-note">
+        <span>Audiotech production <strong>&copy;</strong></span><span id='currentYear'></span>
+
+      </div>
+      </footer>
+    </main>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+            
+</body>
+</html>

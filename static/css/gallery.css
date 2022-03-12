@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap");
+/*--Variables --*/
+:root {
+  /*Font*/
+  --small-font: 16px;
+  --med-font: 36px;
+  --big-font: 64px;
+  /* Font Color*/
+  --font-color1: #c5ca3e;
+
+  /*font-family*/
+  --great-vibes: font-family: 'Great Vibes', cursive;
+  --dancing-script:  "Dancing Script", sans-serif;
+  --league-spartan: 'League Spartan', sans-serif;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bbb;
+}
+
+.in-container {
+  margin: 40px;
+}
+
+.in-container h1 {
+  text-align: center;
+  font-family: var(--league-spartan), sans-serif;
+  font-size: var(--med-font);
+}
+/*------------------_*/
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.slide-container {
+  position: relative;
+  margin: 20px auto;
+  width: 80%;
+  /* height: 300px; */
+
+  /* border: 2px solid red; */
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  padding: 10px;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 600px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 13.5px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 5px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  display: flex;
+}
+
+/* Six columns side by side */
+.column {
+  /* display: flex; */
+  /* float: left; */
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  width: 100%;
+  height: 150px;
+  border: 4px solid #894a4a;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.gal-imgs {
+  background: linear-gradient(to top left, #4055de, #5851db);
+  background: linear-gradient(#e66465, #9198e5);
+  padding: 25px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.img-hd  {
+  text-align: center;
+}
+
+
+.img-hd h3  {
+  font-family: var(--league-spartan), sans-serif;
+  font-size: var(--med-font);
+  color: linear-gradient(#e66465, #9198e5);
+  color: #e66465;
+  background: #9198e5;
+  width: 40%;
+  padding: 5px;
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.gal-img-row {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gal-img-row img {
+  flex: 20%;
+  width: 20%;
+  height: 300px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.gal-img-row img:last-child {
+  height: 600px;
+}
+
+.gl-lk {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.gal-img-lnk {
+  padding: 10px;
+  text-decoration: none;
+  font-size: var(--small-font);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 1px rgba(255,255,255, .5);
+  background: linear-gradient(to left,#e66465, #9198e5);
+  transition: ease-in-out .4s;
+}
+
+.gal-img-lnk:hover {
+  background: violet;
+  transform: scale(1.1);
+}
