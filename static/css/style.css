@@ -19,7 +19,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 body {
@@ -788,7 +788,7 @@ MEDIA QUERY MEDIA QUERY MEDIA QUERY --------------------------------__*/
   }
 
   .hero-text {
-    position: relative;
+    /* position: relative;  */
     text-align: center;
   }
 
@@ -902,18 +902,101 @@ footer {
     display: none;
   }
 
+  .hero {
+    background-size: 100% 100%;
+  }
+
+
+  .hero-txt {
+    top:-10%;
+  }
+
   .typing-txt h1 {
-    max-width: 200px;
+    max-width: 100%;
+    width: 300px;
+    /* font-size: 2em; */
+    font-size: 24px;
+    text-align : center;
+  }
+
+  .typing-txt h1 {
+    font-size: 26px;
+    /* max-width: 200px; */
   }
 
   .typing-txt p {
-    max-width: 100px;
+    /* max-width: 100px; */
     white-space: wrap;
+    width:61ch;
+    overflow:auto;
+    animation: none;
+    border-right:none;
+    font-size: 8px;
   }
 
 
-  .slide-rigth p {
+  .slide-right p {
     width: 300px;
     max-width: 300px;
+  }
+
+  .services {
+    background-color: transparent;
+    padding: 20px;
+  }
+
+  .cards {
+    margin: 20px;
+  }
+
+  .business {
+    margin: 15px;
+  }
+
+  .business-container{
+    border: 2px solid red;
+
+  }
+
+  .business-container h4 {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .business-container p{
+  border: 2px solid red;
+  width: 100%;
+  max-width: 100%;
+  text-align: justify;
+  margin: 0;
+  }
+
+  .event-txt {
+    text-align: center;
+  }
+
+  .event-txt h5 {
+    margin: 0px;
+  }
+
+  .slide-cont img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .more {
+    margin: 100px auto;
+  }
+
+  .more h2 {
+    width: 100%;
+    margin: 0px;
+    font-size: var(--med-font);
+  }
+
+  video {
+    width: 100%;
   }
 }
