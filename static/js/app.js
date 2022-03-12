@@ -3,9 +3,6 @@ const year = date.getFullYear();
 var spanYear = document.getElementById("currentYear");
 spanYear.innerText = year;
 
-const openIcon = document.getElementsByClassName("open");
-const closeIcon = document.getElementsByClassName("close");
-
 var myIndex = 0;
 // const date = new Date();
 // const year = date.getFullYear();
@@ -28,3 +25,15 @@ function carousel() {
 // document.getElementById("cuear").innerHTML = "hello";
 // console.log(year);
 // yearId.innerHTML = year;
+
+const openIcon = document.getElementById("openIcon");
+const closeIcon = document.getElementById("close");
+var navbar = document.getElementsByTagName("nav");
+
+openIcon.addEventListenter("onclick", myClick);
+
+function myClick() {
+  navbar.style.display = "block";
+  openIcon.style.display = "none";
+  closeIcon.style.display = "block";
+}
