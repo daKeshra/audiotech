@@ -26,14 +26,21 @@ function carousel() {
 // console.log(year);
 // yearId.innerHTML = year;
 
-const openIcon = document.getElementById("openIcon");
+var openIcon = document.getElementById("open");
 const closeIcon = document.getElementById("close");
-var navbar = document.getElementsByTagName("nav");
+var navbar = document.querySelector(".navbar");
 
-openIcon.addEventListenter("onclick", myClick);
-
-function myClick() {
+openIcon.addEventListener("click", function () {
   navbar.style.display = "block";
+  navbar.style.transition = "0.6s";
   openIcon.style.display = "none";
   closeIcon.style.display = "block";
-}
+  // navbar.style.
+});
+
+closeIcon.addEventListener("click", function () {
+  navbar.style.display = "none";
+  openIcon.style.display = "block";
+  closeIcon.style.display = "none";
+  // navbar.style.
+});
