@@ -3,6 +3,7 @@
 /*--Variables --*/
 :root {
   /*Font*/
+  /* font-size: 16px; */
   --small-font: 16px;
   --med-font: 36px;
   --big-font: 64px;
@@ -14,7 +15,7 @@
   --dancing-script:  "Dancing Script", sans-serif;
   --league-spartan: 'League Spartan', sans-serif;
 /*---button--*/
---dp-red-purple: #953553;
+  --dp-red-purple: #953553;
 }
 
 * {
@@ -26,9 +27,14 @@
 
 body {
   width: 100%;
+  font-size: clamp(1.5rem, 16px, 4rem);
   /* background-color: #bbb; */
   /* background: url("../img/img-gen/backstage-settings.jpg"); */
   /* background-repeat: no-repeat; */
+}
+
+h1, h2, h3, h4, h5 , h6 {
+  /* font-size: clamp(var(--med-font),40px, var(--big-font) ); */
 }
 
 main {
@@ -247,6 +253,7 @@ nav .logo span {
   font-family: var(--league-spartan), sans-serif;
   font-weight: bold;
   font-size: var(--med-font);
+  font-size: clamp(2rem,48px, 4rem );
   color:  #09455f;
   text-align: center;
   transition: .7s;
@@ -268,12 +275,13 @@ nav .logo span {
 }
 
 .card {
+  /* width: 100%; */
   padding: 20px;
   border-radius: 7px;
   text-align: center;
   background-color: #000;
   transition: ease-in-out 0.5s;
-  box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.2) ;
+  box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.2);
 }
 
 
@@ -299,10 +307,8 @@ nav .logo span {
   white-space: wrap;
   font-weight: 16px;
   font-size: 14px;
-  /* text-overflow: ellipsis; */
   margin: 10px;
   max-width: 300px;
-  /* resize: horizontal; */
 }
 
 
@@ -357,7 +363,6 @@ mark {
   margin: 30px;
   margin-top: 150px;
   /* background-color: red; */
-
 }
 
 .ev-container {
@@ -443,9 +448,8 @@ to {
   font-size: 36px;
   padding: 5px;
   margin: 30px;
-  background-color: #000;
   color: goldenrod;
-  /* color: #bbb; */
+  color:rgb(86, 4, 82);
 }
 
 
@@ -457,9 +461,13 @@ to {
 
 video,source {
   height: 400px;
+  width: clamp(70%, 400px , 100%);
   margin: 10px;
 }
 
+.videos h4 {
+  color:rgba(86, 4, 82,.8);
+}
 
 a.vid-link {
   display: inline-block;
@@ -730,6 +738,120 @@ MEDIA QUERY MEDIA QUERY MEDIA QUERY
 MEDIA QUERY MEDIA QUERY MEDIA QUERY  
 MEDIA QUERY MEDIA QUERY MEDIA QUERY --------------------------------__*/
 
+@media only screen and (min-width:601px) and (max-width: 900px) {
+  .hero-text  {
+    text-align: center;
+    left: 10px;
+  }
+
+
+
+  .typing-txt p {
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 2rem;
+    white-space: normal;
+    width: 100%;
+    max-width: 80%;
+    overflow: none;
+    color:rgb(246, 150, 242);
+    background-color:rgba(245, 199, 199, 0.2);
+    padding: 10px;
+    transition: none;
+  }
+
+  @keyframes typing {
+  }
+
+  .hero-img >img {
+    right: 60px;
+  }
+
+  .services h2 {
+    color:rgb(86, 4, 82);
+  }
+
+  .cards {
+    flex-wrap: wrap;    
+  }
+
+  .card {
+    margin: 50px;
+  }
+
+  .sr-btn {
+    font-size: 1.5rem;
+    width: 40%;
+  }
+
+  .business {
+    margin-top: 120px;
+  }
+
+  .business-container h4 {
+    font-size: 3rem;
+  }
+
+  .business-container p {
+    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color : rgba(0,0,0,.7);
+  }
+
+  .ev-container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .event-txt {text-align: center;}
+  .event-txt h5 {
+    font-size: 5rem;
+  }
+
+  .slide-right  p {
+
+    text-align-last: center;
+    -ms-text-align-last: center;
+    font-size: 1.8rem;
+    color : rgba(0,0,0,.7);
+  }
+
+  .ev-link {
+    width: 60%;
+  text-align: center; 
+  align-self: center;
+  padding: 10px 16px;
+  font-size: 2rem;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,.5);
+  /* margin: 10px auto; */
+  }
+
+  .ev
+  .vid-items {
+    flex-wrap: wrap;
+  }
+
+  .more h2 {
+    font-size: 4rem;
+    background: transparent;
+    color:rgb(86, 4, 82);
+  }
+
+  a.vid-link {
+    font-size: 1.5rem;
+  }
+
+  video {
+    height: 500px;
+    width: clamp(70%, 400px, 100%);
+  }
+
+  .vid-items {
+    flex-wrap: wrap;
+  }
+
+
+}
 
 @media only screen and (max-width: 600px) {
   body {
@@ -1008,7 +1130,7 @@ footer {
   }
 
   .slide-right p {
-  text-align: center;
+    text-align: center;
     max-width: 400px;
     padding:10px 40px;
 
@@ -1025,7 +1147,6 @@ footer {
     width: 100%;
     height: 300px;
     margin: 20px auto;
-  
   }
 
   .more {
@@ -1051,8 +1172,7 @@ footer {
 /*--Smaller-Mobile-----*/
 
 @media only screen and (max-width: 375px)  {
-  body {
-  }
+  
 
   nav {
     display: none;
@@ -1097,12 +1217,6 @@ footer {
   }
   
 
-
-  .slide-right p {
-    width: 300px;
-    max-width: 300px;
-  }
-
   .services {
     background-color: transparent;
     padding: 20px;
@@ -1127,6 +1241,7 @@ footer {
     width: 250px;
     height: 200px;
   }
+
   .business {
     margin: 15px;
   }
@@ -1170,12 +1285,18 @@ footer {
   .slide-right p {
     text-align: justify;
     text-align-last: center;
-    max-width: 270px;
-    margin: 20px;
+    max-width: 375px;
+    margin: 10px;
+
   }
 
   .ev-link {
     margin: 5px;
+    font-size: 1.5rem;
+    width: 375px;
+    max-width: 225px;
+    
+    font-weight: normal;
   }
 
   .more {
@@ -1190,5 +1311,9 @@ footer {
 
   video {
     width: 100%;
+  }
+
+  .videos  {
+    margin-top: 2px;
   }
 }
