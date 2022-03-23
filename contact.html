@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./static/css/style.css">
-   <script defer src='./static/js/app.js'></script>
-
+   <script  defer src='./static/js/app.js'></script>
     <title>Audiotech production</title>
 </head>
 <body>
     <main>
         <header>
             <div class="logo">
-                <a href='#'>
+                <a href='./index.html'>
                     <!-- <img src="./static/img/img-logo/audio-prod.png" alt=""> -->
                     <img src="./static/img/img-logo/audio-logo.png" alt="">
                 </a>
@@ -32,29 +31,33 @@
         
             <div class="nav-icons">
                 <span class='icons'>
-                    <img class='open' src='./static/img/img-gen/icon-menu.svg' draggable="false" alt='Open icon' >
-                    <img class='close' src='./static/img/img-gen/icon-close.svg' draggable="false" alt='Open icon' > 
+                    <img id='open' src='./static/img/img-gen/icon-menu.svg' draggable="false" alt='Open icon' >
+                    <img id='close' src='./static/img/img-gen/icon-close.svg' draggable="false" alt='Open icon' > 
                 </span>
             </div>
         </header>
+
         <div class="contact-container">
-            <form id='form' action="">
+            <form id='fcf-form-id' class='fcf-form-class' method='POST' action="./contact-us.php">
                 <h1>Contact Us</h1>
                 <div class="form-const">
                     <div class="input-control">
-                        <label for='name'>Name:</label><br>
-                        <input type="text" name='name' placeholder="Name" >
+                        <label for='Name'>Name:</label><br>
+                        <input type="text" id='name' name='Name' placeholder="Name" >
+                          <div class='error'></div>
                     </div>
                     
                     <div class="input-control">
-                        <label for='email'>Email:</label><br>
-                        <input type="email" name='email' placeholder="Enter your email" >
+                        <label for='Email'>Email:</label><br>
+                        <input type="email" id='email' name='Email' placeholder="Enter your email" >
+                          <div class='error'></div>
                     </div>
 
                     <div class="input-control">
                         <!-- <label for='email'>Email</label> -->
-                        <textarea name="message" id="formMessage" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                        <textarea name="message" id="Message" name='Message' cols="30" rows="10" placeholder="Enter your message"></textarea>
                         <!-- <input type="email" name='email' placeholder="Enter your email" > -->
+                          <div class='error'></div>
                     </div>
                     
                 </div>

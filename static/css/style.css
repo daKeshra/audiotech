@@ -128,14 +128,15 @@ nav .logo span {
 
 .nav-icons {
   position: absolute;
-  right: 12px;
+  right: 13px;
   top: 12px;
-  z-index: 99;
+  z-index: 999;
   /* display: none; */
 }
 
 #open {
   display: none;
+  cursor: pointer;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -144,6 +145,7 @@ nav .logo span {
 }
 
 #close {
+  cursor: pointer;
   width: 35px;
   height: 30px;
   display: none;
@@ -160,6 +162,7 @@ nav .logo span {
 .icons img {
   height: 20px;
   font-weight: bold;
+  border-radius: 5px;
 }
 
 .hero {
@@ -168,7 +171,8 @@ nav .logo span {
   background: url('../img/img-gen/light-stage.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: auto 1000px;
+  object-fit: cover;
+  /* background-size: auto 1000px; */
   background-size: 100% 100%;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
@@ -246,6 +250,7 @@ nav .logo span {
   font-size: var(--med-font);
   font-size: clamp(2rem,48px, 4rem );
   color:  #09455f;
+  color: #b00989;
   text-align: center;
   transition: .7s;
 }
@@ -267,9 +272,10 @@ nav .logo span {
   padding: 20px;
   border-radius: 7px;
   text-align: center;
-  background-color: #000;
   background-color: #b00989;
   background-color: #ff6fdd;
+  background: #241e34;
+
   background: linear-gradient(to right bottom, #de1bb0, #d74cb6);
   transition: ease-in-out 0.5s;
   box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.2);
@@ -386,7 +392,7 @@ margin-top: 30px;
   line-height: 30px;
   margin: 10px;
   /* max-width: 450px; */
-  width: 550px;
+  /* width: 550px; */
 }
 
 .ev-link {
@@ -505,7 +511,6 @@ label {
   display: inline-block;
   font-weight: bold;
   color: #fff;
-
   margin-bottom: 4px;
   font-family: var(--great-vibes), sans-serif;
   letter-spacing: 1px;
@@ -513,11 +518,16 @@ label {
 
 .input-control {
   margin: 15px;
+  font-size: 16px;
 }
-
+.input-control input {
+  padding: 10px;
+}
 .input-control input,textarea {
   width: 300px;
   width: 100%;
+  border: none;
+  border-radius: 2px;
 }
 
 textarea {
@@ -525,8 +535,28 @@ textarea {
   font-size: 15px;
 }
 
+.error {
+  color: red;
+}
+
+.input-control.success input {
+  border-color: green;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+  border: 1px solid #f0f0f0;
+}
+
+.input-control .error {
+  color: red;
+  font-size: 9px;
+  height: 13px;
+  margin-left: 15px;
+  margin-top: 3px;
+}
 .btn-submit {
-  padding: 5px;
+  padding: 10px;
   /* font-weight:  bold; */
   background: transparent;
   border-radius: 3px;
@@ -536,7 +566,16 @@ textarea {
   border: none;
   width: 20%;
   background-color:#1196cf;
+  background: #2f0435;
+  background: rgb(45, 29, 87);
   margin: 15px;;
+}
+
+.btn-submit:hover {
+  transform: scale(.9);
+  background-color: rgb(93, 66, 162);
+  transition: background .5s;
+
 }
 
 .contact-icons {
@@ -545,7 +584,8 @@ textarea {
   height: 200px;
   padding: 9px 16px;
   align-self: center;
-  background-color: #9ee7ef;
+  /* background-color: #2f0435; */
+  background-color: #241e34;
   box-shadow:0px 0px 4px 2px #241e34;
   box-shadow: 2px 6px 5px #241e34,  -2px -6px 5px #f0f0f0;
 
@@ -553,10 +593,10 @@ textarea {
 
   .contact-icons h2 {
     margin: 23px 0px 23px 0px;
-    color:#9ee7ef;
+    color:#f0f0f0;
     padding: 5px;
     border-radius: 3px;
-    background-color: #613838;
+    /* background-color: #613838; */
   }
 
   /*---------ABOUT------*/
@@ -564,13 +604,13 @@ textarea {
     text-align: center
   }
 
-  .abt-hero-img {
+  /* .abt-hero-img {
     position: relative;
   }
   .abt-hero-img img{
     width: 60%;
     border-radius: 20%;
-  }
+  } */
 
   img.aud-log {
     position: absolute;
@@ -596,18 +636,54 @@ textarea {
   }
 
   .about-txt {
+    margin-top: 80px;
     padding: 16px 25px;
   }
 
   .about-txt p{
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
-    text-align: justify;
+    /* text-align: justify; */
     text-align-last: center;
     line-height: 32px;
-    width: 50%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 30px auto;
   }
+
+  .otm {
+    padding: 15px 25px;
+    font-size: 16px;
+
+  }
+
+  .otm h2 {
+    background-color: #241e34;
+    color:#f0f0f0;
+    font-family: var(--great-vibes),sans-serif;
+    padding: 10px;
+    width:50%;
+    margin: 0 auto;
+    border-radius: 40px 40px 0px 0px;
+  }
+
+  .hire {
+    padding: 10px;
+  }
+
+  .hire h3 {
+    font-family: var(--great-vibes), sans-serif;
+    font-size: 23px;
+    margin: 5px;  
+  }
+
+    .hire p {
+      font-style: 16px;
+      line-height: 32px;
+      padding: 24px;
+      width: 60%;
+      margin: 0 auto;
+    }
+
 
   .lottie-img  {
     text-align: center;
@@ -615,11 +691,7 @@ textarea {
   }
   
   #currentYear {
-    /* border: 2px solid red; */
-    /* background: yellowgreen; */
-    /* height: 60px; */
     display: inline-block;
-    /* width: 100px; */
     padding: 4px;
   }
 /*-----FOOTERLINKS -----*/
@@ -837,6 +909,21 @@ MEDIA QUERY MEDIA QUERY MEDIA QUERY --------------------------------__*/
     flex-wrap: wrap;
   }
 
+  /*-----contct FORM---------*/
+  /*-----contact FORM---------*/
+  /*-----contact FORM---------*/
+
+  .contact-container {
+    /* flex-wrap: wrap-reverse; */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  form {
+    width: 80%;
+    margin: 30px auto;
+  }
+
 
 }
 
@@ -875,13 +962,14 @@ MEDIA QUERY MEDIA QUERY MEDIA QUERY --------------------------------__*/
 
   nav ul li {
     text-align: center;
-    margin: 30px 0px 0px 15px ;
+    margin: 30px 0px 0px 0px ;
     width: 100%;
+    padding: 10px;
     box-shadow: 0px 1px 0px 0px rgba(255,255,255,.4);
   }
 
   nav ul li:last-child {
-    margin-top: 30px;
+    margin-top: 50px;
     border-radius: 3px;
     box-shadow: none;
     width: 80%;
@@ -890,17 +978,25 @@ MEDIA QUERY MEDIA QUERY MEDIA QUERY --------------------------------__*/
     padding: 10px;
   }
 
+  nav ul li a {
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 25px;
+  }
+
   nav ul li a:hover {
     border-bottom: none;
   }
 
   #open {
     display: block;
+    border: 2px solid aliceblue;
   }
 
   #close {
     background-color: rgba(174, 127, 127, 0.2);
     padding: 4px;
+    height: 34px;
     border-radius:4px;
   }
 
@@ -912,9 +1008,11 @@ MEDIA QUERY MEDIA QUERY MEDIA QUERY --------------------------------__*/
   .hero {
     width: 100%;
     /* background: url("../img/img-gen/fantasy-music.jpg"); */
-    height: 100vh;
+    /* height: 100vh; */
     background-size: 100% 100%;
+    background-position: center bottom;
     background-repeat: no-repeat;
+    object-fit: cover;
   }
 
   .hero-content {}
@@ -945,6 +1043,7 @@ MEDIA QUERY MEDIA QUERY MEDIA QUERY --------------------------------__*/
     /* height: auto; */
     object-fit: cover ;
   }
+
   .services {
       margin: 30px;
   }
@@ -1027,23 +1126,42 @@ footer {
   text-align:center;
 }
 
-.footer-container {
+  .footer-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    text-align: center;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .futr-srvc-lst {
+  }
+  .futr-srvc-lst h5 {
+    text-align: center;
+  }
+
+
+
+/*-----contct FORM---------*/
+/*-----contact FORM---------*/
+/*-----contact FORM---------*/
+.contact-container {
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 30px;
-  text-align: center;
 }
 
-.footer-links {
-  text-align: center;
+form {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.futr-srvc-lst {
-}
-.futr-srvc-lst h5 {
-  text-align: center;
+.btn-submit {
+  width: 50%;
 }
 }
 
@@ -1085,7 +1203,7 @@ footer {
   }
 
   .card {
-    background-color: #953553;
+    /* background-color: #953553; */
   }
 
   .card-txt h3 {
@@ -1165,9 +1283,10 @@ footer {
   }
 
   .hero {
-    /* background: url('../img/img-gen/mic-stage.jpg'); */
+    background: url('../img/img-gen/mic-stage.jpg');
     background-size: 100% 100%;
     /* height: 80vh; */
+    object-fit: cover;
     row-gap: 20px;
   }
 
@@ -1180,9 +1299,12 @@ footer {
     left: 30px;
   }
 
-  .her0-img > img {
-    /* right: -200px; */
+  .hero-img > img {
+    right: 0px;
     width: 100%;
+    height: auto;
+    height: 100%;
+    display: none;
   }
 
   .typing-txt h1 {
@@ -1480,3 +1602,8 @@ footer {
     border: 2px solid red;
   }
   } 
+
+  a {
+  /* background: #241e34; */
+
+  }
