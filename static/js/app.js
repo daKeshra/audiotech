@@ -22,10 +22,12 @@ spanYear.innerText = year;
 var openIcon = document.getElementById("open");
 var closeIcon = document.getElementById("close");
 var navbar = document.querySelector(".navbar");
+var li = document.getElementById("navlist");
 
 openIcon.addEventListener("click", function () {
   navbar.style.display = "block";
   // navbar.style.transition = "0.6s";
+  li.add.classList = ".active";
   openIcon.style.display = "none";
   closeIcon.style.display = "block";
   // navbar.style.
