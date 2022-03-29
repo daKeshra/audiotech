@@ -1,263 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name='description' content="Music instrument, stage renting and stage lightning">
-    <meta name="keywords" content="musical instrument hire, Sound production, stage lightning, stage board, perimeter lightning, instrument rentage rentals, instrument for live shows, live band  ">
-    <meta name="author" content="Kennysluv, Audiotech production">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href="./static/css/style.css">
-    <link rel='stylesheet' href="./static/css/gallery.css">
-    <script defer src='./static/js/app.js'></script>
-    <link rel="icon"  href="./static/img/img-logo/audioicon.png">
-    <title>Audiotech production</title>
-</head>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Audiotech production</title>
+      <meta name="keywords" content="musical instrument hire, Sound production, stage lightning, stage board, perimeter lightning, instrument rentage rentals, instrument for live shows, live band  ">
+      <meta name='description' content="Music instrument, stage renting and stage lightning">
+      <meta name="author" content="Kennysluv, Audiotech production">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="icon/audioicon.png" type="image/gif" />
 
-<body style='background-color: white;'>
-    <main class='gallery-main'>
-      <header>
-        <div class="logo">
-            <a href='./index.html'>
-                <img src="./static/img/img-logo/audio-prod.jpg" alt="">
-            </a>
-            <!-- <span>Audiotech</span> -->
-        </div>
-    
-        <nav class='navbar'>
-            <ul class='nav-link'>
-                <li><a href="./index.html">Home</a></li>
-                <!-- <li><a href=".events.html">Events</a></li> -->
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    
-        <div class="nav-icons">
-            <span class='icons'>
-                <img id='open' src='./static/img/img-gen/icon-menu.svg' draggable="false" alt='Open icon' >
-                <img id='close' src='./static/img/img-gen/icon-close.svg' draggable="false" alt='Close icon' > 
-            </span>
-        </div>
-    </header>
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page gallery_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="icon/audioicon.png" alt="Audiotech production"/></div>
+      </div>
+      <!-- end loader -->
+      <div class="full_bg" id='returnToHead'>
+         <!-- header -->
+         <header class="header-area">
+            <div class="container-fluid">
+               <div class="row d_flex">
+                  <div class=" col-md-2 col-sm-3">
+                     <div class="logo">
+                        <a href="index.html">
+                           <figure>
+                              <img src='icon/audio-prod.jpg' alt='audiotech logo'>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-9">
+                     <div class="navbar-area">
+                        <nav class="site-navbar">
+                           <ul>
+                              <li><a  href="index.html">Home</a></li>
+                              <li><a class="active" href="gallery.html">Gallery</a></li>
+                              <li><a  href="about.html">About</a></li>
+                              <li><a  href="contact.html">Contact</a></li>
+                           </ul>
+                           <button class="nav-toggler">
+                           <span></span>
+                           </button>
+                        </nav>
+                     </div>
+                  </div>
 
-
-        <section class="hero" style="background: url('./static/img/img-gen/mic-stage.jpg'); background-repeat: no-repeat; object-fit: cover; background-size: 100% 100vh;">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <div class="typing-txt">
-                            <h1>Welcome to Audiotech gallery</h1>
-                            <p>Your one stop place for stage and musical instrument rentals.</p>
-                        </div>
-                    </div>
-<!--                     
-                    <div class="hero-img">
-                        <img class="mySlid w3-animate-fading" src="./static/img/img-gen/music-speaker-removebg-preview.png" alt='Music Speaker' >
-                    </div> -->
-                </div>
-            </section>
-        
-    <div class="gallery-container">
-      <div class="in-container">
-        <h1>Audiotech production Events Gallery</h1>
-        <div class="gall">
-         
-            <div class="slide-container">
-                <div class="newSlides">
-                  <div class="numbertext">1 / 6</div>
-                  <img src='./static/img/img-gallery/IMG-20220226-WA0034.jpg' alt='gallery image'  draggable="false">
-                  <!-- <img src="img_woods_wide.jpg" style="width:100%"> -->
-                </div>
-              
-                <div class="newSlides">
-                  <div class="numbertext">2 / 6</div>
-                  <img src='./static/img/img-gallery/IMG-20220226-WA0033.jpg' alt='gallery image'  draggable="false">
-
-                  <!-- <img src="img_5terre_wide.jpg" style="width:100%"> -->
-                </div>
-              
-                <div class="newSlides">
-                  <div class="numbertext">3 / 6</div>
-                  <img src='./static/img/img-gen/esther-igbekele.jpg' alt='gallery image'  draggable="false">
-
-                  <!-- <img src="img_mountains_wide.jpg" style="width:100%"> -->
-                </div>
-                  
-                <div class="newSlides">
-                  <div class="numbertext">4 / 6</div>
-                  <img src='./static/img/img-gen/instagram_image-two.jpg' alt='gallery image'  draggable="false">
-                </div>
                 
-                <div class="newSlides">
-                    <div class="numbertext">5 / 6</div>
-                    
-                    <img src='./static/img/img-gallery/IMG-20220226-WA0026.jpg' alt='gallery image'  draggable="false">
-                    <!-- <img src="img_nature_wide.jpg" style="width:100%"> -->
-                </div>
-                
-                <div class="newSlides">
-                    <div class="numbertext">6 / 6</div>
-                    <img src="./static/img/img-gen/instagram_image-three.jpg" >
-                  <!-- <img src="img_snow_wide.jpg" style="width:100%"> -->
-                </div>
-                  
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-              
-                <div class="caption-container">
-                  <p id="caption"></p>
-                </div>
-              
-                <div class="row">
-                  <div class="column">
-                    <img class="demo cursor" src="./static/img/img-gallery/IMG-20220226-WA0034.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="./static/img/img-gallery/IMG-20220226-WA0033.jpg" stxyle="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="./static/img/img-gen/esther-igbekele.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="./static/img/img-gen/instagram_image-two.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="./static/img/img-gallery/IMG-20220226-WA0026.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-                  </div>    
-                  <div class="column">
-                    <img class="demo cursor" src="./static/img/img-gen/instagram_image-three.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                  </div>
-                </div>
-              </div>
-
-              <div class="gal-imgs">
-                <div class="img-hd">
-                  <!-- <h3>Lets light up your sound</h3> -->
-                  <h3>Lets sound up your event</h3>
-
-                  <p>We provide our service to the maximum when we setup your events</p>
-                  <p>We set stage for Concerts, crusades, revivals, live shows, church, wedding and on...</p>
-                </div>
-
-                <div class="gal-img-row">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0042.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0022.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0033.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0036.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gen/instagram_image-five.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gen/instagram_image-one.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gen/instagram_image-four.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gen/instagram_image-seven.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0040.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0044.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0045.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0048.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0027.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0034.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0038.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0026.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0027.jpg" alt="Gallery image">
-                  <img src="./static/img/img-gallery/IMG-20220226-WA0028.jpg" alt="Gallery image">
-
-                </div>
-              </div>
-
-
-              <div class="gl-lk">
-                <a class='gal-img-lnk' href="https://instagram.com/audiotech_production?utm_medium=copy_link">See more</a>
-              </div>
+               </div>
             </div>
-        </div>
-    </div>
+         </header>
+         <!-- end header inner -->
+      </div> 
+      <!-- end banner -->
+      <!-- customers -->
+      <div class="customers">
+         <div class="clients_bg">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="titlepage text_align_left">
+                         <span>Our</span>
+                         <h2>Gallery</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
 
+         <!-- start slider section -->
+         <div id="myCarousel" class="carousel slide clients_banner" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <div class="row d_flex">
+                           <div class="col-md-6">
+                           
+                              <div class="custom">
+                                 <div class="d_flex">
+                                    <!-- <div class="clint">
+                                    </div> -->
+                                 </div>
+                                 <figure>
+                                    <img src='img/IMG-20220226-WA0056.jpg' alt='stage'>
+                                 </figure>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="custom">
+                                 <div class="d_flex">
+                                    <div class="clint">
+                                    </div>
+                                 </div>
+                                 <figure>
+                                    <img src='img/IMG-20220325-WA0005.jpg' alt='stage'>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                       <div class="row d_flex">
+                           <div class="col-md-6">
+                              <div class="custom">
+                                 <div class="d_flex">
+                                    <!-- <div class="clint">
+                                    </div> -->
+                                 </div>
 
-        </div>
-        <footer>
-          <div class="footer-container">
-              <div class="footer-logo">
-                  <img src='./static/img/img-logo/audio-prod.jpg' alt='Audiotech logo' draggable="false">
-              </div>
+                                 <figure>
+                                    <img src='img/IMG-20220226-WA0034.jpg' alt='stage'>
+                                 </figure>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="custom">
+                                 <div class="d_flex">
+                                    <!-- <div class="clint">
+                                    </div> -->
+                                 </div>
+                                    <figure>
+                                       <img src='img/IMG-20220226-WA0038.jpg' alt='stage'>
+                                    </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                       <div class="row d_flex">
+                           <div class="col-md-6">
+                              <div class="custom">
+                                 <div class="d_flex">
+                                    <!-- <div class="clint">
+                                   
+                                    </div> -->
+                                 </div>
+                                 <figure>
+                                    <img src='img/IMG-20220226-WA0044.jpg' alt='stage'>
+                                 </figure>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="custom">
+                                 <div class="d_flex">
+                                    <!-- <div class="clint">
+                                    </div> -->
+                                 </div>
+                                 <figure>
+                                    <img src='img/esther-igbekele.jpg' alt='stage'>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class='read_more gal' href="gallery.html">see more</a>
+            </div>
 
-              <div class="futr-links">
-                  <h5>Links</h5>
-                  <ul class="footer-links">
-                      <li><a href='#'>Home</a></li>
-                      <li><a href='#'>About</a></li>
-                      <li><a href='#'>Visit us</a></li>
-                      <li><a href='#'>Contact us</a></li>
-                  </ul>
-          </div>
-
-          <div class="futr-srvc-lst">
-              <h5>Services</h5>
-              <ul class="footer-service">
-                <li>Musical Concert</li>    
-                <li>Wedding stage</li>    
-                <li>Stage lightning</li>
-                <li>Church stage</li>    
-                <li>Stage rentals</li>    
-                <li>Live show</li>     
-              </ul>
-          </div>
-              
-          <div class="footer-icons">
-              <span class="icon-links">
-                  <a href="https://wa.me/+2348134154942" target="_blank">
-                      <img class='iclnks' src='./static/img/img-logo/icons8-whatsapp-30.png' alt='Whatsapp icon' aria-hidden="false" draggable="false">
-                  </a>
-
-                  <a href='https://web.facebook.com/hrm.kennysluv' target="_blank">
-                      <img class='iclnks' src="./static/img/img-logo/icons8-facebook-48.png" alt="facebook icon" aria-hidden="false" draggable="false">
-                  </a>
-
-                  <a href='https://instagram.com/audiotech_production?utm_medium=copy_link' target="_blank">
-                      <img class='iclnks' src='./static/img/img-logo/icons8-instagram-96.png' alt='instagram icon' draggable='false' aria-hidden="false">
-                  </a>
-
-                  <a href="mailto:audiotechproduction1@gmail.com" target="_blank">
-                      <img class='iclnks' src='./static/img/img-logo/icons8-gmail-48.png' aria-hidden="false" draggable="false" alt='Gmail icon'>
-                  </a>
-              </span>
-          </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+               <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+               <span class="sr-only">Next</span>
+            </a>
+         </div>
       </div>
-      <div class="footer-note">
-        <span>Audiotech production <strong>&copy;</strong></span><span id='currentYear'></span>
+      <!-- end customers -->
+      
+      <!-- Start image body -->
+      <div class="gal-hd">
+         <div class="gal-img-row col d-flex flex-wrap">
+            <img src='img/IMG-20220325-WA0004.jpg ' alt='Gallery image'>
+            <img src="img/IMG-20220226-WA0022.jpg" alt="Gallery image">
+            <img src="img/IMG-20220226-WA0033.jpg" alt="Gallery image">
+            <img src="img/IMG-20220226-WA0036.jpg" alt="Gallery image">
+            <img src="img/IMG-20220226-WA0042.jpg" alt="Gallery image">
+            <img src='img/IMG-20220326-WA0016.jpg ' alt='Gallery image'>
+            <img src="img/instagram_image-five.jpg" alt="Gallery image">
+            <img src='img/IMG-20220226-WA0044.jpg ' alt='Gallery image'>
+            <img src="img/instagram_image-seven.jpg" alt="Gallery image">
+            <img src="img/IMG-20220226-WA0040.jpg" alt="Gallery image">
+            <img src="img/instagram_image-one.jpg" alt="Gallery image">
+            <img src="img/IMG-20220226-WA0044.jpg" alt="Gallery image">
+            <img src="img/IMG-20220226-WA0045.jpg" alt="Gallery image">
+            <img src="img/IMG-20220226-WA0048.jpg" alt="Gallery image">
+            <img src="img/IMG-20220226-WA0027.jpg" alt="Gallery image">
+            <img src="img/IMG-20220226-WA0026.jpg" alt="Gallery image">
+            <img src="img/IMG-20220226-WA0028.jpg" alt="Gallery image">
+            <img src='img/instagram_image.jpg ' alt='Gallery image'>
+            <img src='img/backstage-settings.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0032.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220326-WA0017.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0038.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0033.jpg ' alt='Gallery image'>
+            <img src='img/esther-igbekele.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220326-WA0007.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0030.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220324-WA0006.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220325-WA0005.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0029.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220326-WA0005.jpg ' alt='Gallery image'>
+            <img src='img/instagram-i.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0048.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0041.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0035.jpg ' alt='Gallery image'>
+            <img src='img/return-speaker.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220324-WA0008.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220324-WA0009.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0052.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0026.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0051.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0047.jpg ' alt='Gallery image'>
+            <img src='img/stage-jorik.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0039.jpg ' alt='Gallery image'>
+            <img src='img/light-stage.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0057.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220324-WA0010.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220326-WA0015.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0031.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0055.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0045.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0023.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220326-WA0018.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0040.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0034.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0060.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220324-WA0007.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0056.jpg ' alt='Gallery image'>
+            <img src='img/mixer.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220326-WA0019.jpg ' alt='Gallery image'>
+            <img src='img/instagram_image-one.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0059.jpg ' alt='Gallery image'>
+            <img src='img/instagram_image-five.jpg ' alt='Gallery image'>
+            <img src='img/colourful-stage.jpg ' alt='Gallery image'>
+            <img src='img/instagram_image-six.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220326-WA0008.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0028.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220326-WA0006.jpg ' alt='Gallery image'>
+            <img src='img/beautiful-stage.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0021.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0054.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0046.jpg ' alt='Gallery image'>
+            <img src='img/stage-concert.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0058.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220324-WA0011.jpg ' alt='Gallery image'>
+            <img src='img/mic-stage.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0043.jpg ' alt='Gallery image'>
+            <img src='img/instagram_image-two.jpg ' alt='Gallery image'>
+            <img src='img/instagram_image-four.jpg ' alt='Gallery image'>
+            <img src='img/stefano-stage.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0053.jpg ' alt='Gallery image'>
+            <img src='img/speakers.jpg ' alt='Gallery image'>
+            <img src='img/IMG-20220226-WA0042.jpg ' alt='Gallery image'>
 
+         </div>
       </div>
-      </footer>
-    </main>
+      <!--End image body -->
 
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("newSlides");
-          var dots = document.getElementsByClassName("demo");
-          var captionText = document.getElementById("caption");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-          captionText.innerHTML = dots[slideIndex-1].alt;
-        }
-        </script>
+      <!-- Events videos -->
+         <div class="ev-vid col">
+            <h3>Videos from our events</h3>
+
+            <div class="row row-vid">
+               <video controls >
+                  <source src="video/church-one.mp4" type="video/mp4">
+                  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://www.instagram.com/p/CVufmZjvZAD/">link to the video</a> instead.</p>
+                </video>
+
+                <video controls >
+                  <source src="video/VID-20220325-WA0006.mp4" type="video/mp4">
+                  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://www.instagram.com/p/CVufmZjvZAD/">link to the video</a> instead.</p>
+                </video>
+
+                <video controls >
+                  <source src="video/VID-20220325-WA0009.mp4" type="video/mp4">
+                  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://www.instagram.com/p/CVufmZjvZAD/">link to the video</a> instead.</p>
+                </video>
+            </div>
+
+            <div class="row .row-vid">
+               <video controls >
+                  <source src="video/church-two.mp4" type="video/mp4">
+                  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://www.instagram.com/p/CVufmZjvZAD/">link to the video</a> instead.</p>
+                </video>
+
+                <video controls >
+                  <source src="video/church-three.mp4" type="video/mp4">
+                  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://www.instagram.com/p/CVufmZjvZAD/">link to the video</a> instead.</p>
+                </video>
+
+                <video controls >
+                  <source src="video/church-four.mp4" type="video/mp4">
+                  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://www.instagram.com/p/CVufmZjvZAD/">link to the video</a> instead.</p>
+                </video>
+            </div>
+
             
-</body>
+            <div class="row row-vid">
+               <video controls >
+                  <source src="video/instagram_video.mp4" type="video/mp4">
+                  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://www.instagram.com/p/CVufmZjvZAD/">link to the video</a> instead.</p>
+                </video>
+
+                <video controls >
+                  <source src="video/instagram_video-99.mp4" type="video/mp4">
+                  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://www.instagram.com/p/CVufmZjvZAD/">link to the video</a> instead.</p>
+                </video>
+                
+                <video controls >
+                  <source src="video/instagram_video(1).mp4" type="video/mp4">
+                  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://www.instagram.com/p/CVufmZjvZAD/">link to the video</a> instead.</p>
+                </video>
+
+            </div>
+
+            <span>Visit our instagram and facebook page for more entertinaing live videos.</span> 
+         </div>
+      <!-- End Event vidoes -->
+           <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                         <div class="col-lg-3 col-md-6">
+                           <div class="hedingh3  text_align_left">
+                              <!-- <div class="futr-srvc-lst"> -->
+                                 <h3>Services</h3>
+                                 <ul class="footer-service">
+                                     <li>Musical Concert</li>    
+                                     <li>Wedding stage</li>    
+                                     <li>Stage lightning</li>
+                                     <li>Church stage</li>    
+                                     <li>Stage rentals</li>    
+                                     <li>Live show</li>    
+                                 </ul>
+                             <!-- </div> -->
+                          
+                              
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="hedingh3 text_align_left">
+                              <h3> Explore</h3>
+                              <ul class="menu_footer">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About</a></li>
+                                 <li><a href="service.html">Service</a></li>
+                                 <li><a href="gallery.html">Gallery</a></li>
+                                 <li><a href="contact.html">Contact us</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     
+                         <div class="col-lg-3 col-md-6">
+                           <div class="hedingh3  flot_right text_align_left">
+                              <h3>ContacT</h3>
+                              <ul class="top_infomation">
+                                 <li><i class="fa fa-phone" aria-hidden="true"></i>
+                                    +234 813 4154 942
+                                 </li>
+                                 <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href=" mailto:audiotechproduction1@gmail.com">audiotechproduction1@gmail.com</a>
+                                 </li>
+
+                                 <li><i class="fa fa-address-book" aria-hidden="true"></i>
+                                    <a href="Javascript:void(0)">Plot 17, okunola estate ,Ijoko road , Sango otta  ogun state .</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+             <hr class="hr-line">
+             <div class="rtop">
+               <li><a class='carousel-control-top' href="#returnToHead"><i class="fa fa-angle-up" aria-hidden="true"></i></a>To top</li>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row d_flex">
+                     <div class="col-md-8">
+                        <p>© 2022 All Rights Reserved.<a href="index.html"> Audiotech Production</a></p>
+                     </div>
+
+                     <div class="col-md-4">
+                           <ul class="social_icon ">
+                              <li><a href="https://web.facebook.com/hrm.kennysluv" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                              <li><a href="https://instagram.com/audiotech_production?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                              <li><a href="https://wa.me/+2348134154942"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                              <li><a href="mailto:audiotechproduction1@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+                           </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
 </html>
